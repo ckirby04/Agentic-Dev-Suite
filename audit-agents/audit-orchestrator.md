@@ -5,7 +5,7 @@ description: >
   codebase fingerprint, then dispatches five specialist subagents (conformance, correctness,
   security, tests, hygiene/compat/docs) and merges their findings into one verdict. Use when
   asked to audit, review, or vet a branch before merge.
-tools: Read, Grep, Glob, Bash, Task
+tools: Read, Grep, Glob, Bash, Agent
 ---
 
 # Branch Audit — Orchestrator

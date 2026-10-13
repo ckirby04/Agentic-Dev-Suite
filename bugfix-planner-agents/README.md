@@ -60,8 +60,8 @@ the root cause before returning the plan.
 ## Using it
 
 - **In Claude Code:** drop these in `.claude/agents/`; ask Claude to "diagnose and plan a fix
-  for <bug>". The orchestrator dispatches the rest via the `Task` tool.
-- **As a plain prompt:** paste `bugfix-planner.md`; without `Task` it runs the subagents'
+  for <bug>". The orchestrator dispatches the rest via the `Agent` tool.
+- **As a plain prompt:** paste `bugfix-planner.md`; without `Agent` it runs the subagents'
   checklists sequentially in one context — same coverage.
 
 ## Pairs with

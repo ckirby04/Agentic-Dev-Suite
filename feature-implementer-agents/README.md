@@ -60,8 +60,8 @@ PRs, merge, or change settings — those stay with the user.
 ## Using it
 
 - **In Claude Code:** drop these in `.claude/agents/`; give it a plan and say "implement this".
-  The orchestrator dispatches the rest via the `Task` tool.
-- **As a plain prompt:** paste `feature-implementer.md` with the plan; without `Task` it runs
+  The orchestrator dispatches the rest via the `Agent` tool.
+- **As a plain prompt:** paste `feature-implementer.md` with the plan; without `Agent` it runs
   the roles sequentially in one context.
 
 ## The full pipeline

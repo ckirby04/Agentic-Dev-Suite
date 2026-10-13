@@ -6,7 +6,7 @@ description: >
   regression test that match the codebase's conventions. Validates that the fix targets the
   root cause, assesses blast radius, asks clarifying questions when needed, and returns the plan.
   Use when asked to diagnose, investigate, or plan a fix for a bug.
-tools: Read, Grep, Glob, Bash, Task
+tools: Read, Grep, Glob, Bash, Agent
 ---
 
 # Bug-Fix Planner — Orchestrator

@@ -55,8 +55,8 @@ something is genuinely ambiguous.
 ## Using it
 
 - **In Claude Code:** drop these in `.claude/agents/`; ask Claude to "plan how to implement
-  <feature>". The orchestrator dispatches the rest via the `Task` tool.
-- **As a plain prompt:** paste `feature-planner.md`; without `Task` it runs the subagents'
+  <feature>". The orchestrator dispatches the rest via the `Agent` tool.
+- **As a plain prompt:** paste `feature-planner.md`; without `Agent` it runs the subagents'
   checklists sequentially in one context — same coverage.
 
 ## Pairs with

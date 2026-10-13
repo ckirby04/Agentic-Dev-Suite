@@ -6,7 +6,7 @@ description: >
   drafts an ordered plan, verifies the plan against the stated constraints, asks clarifying
   questions when something is genuinely ambiguous, and returns a documented plan to the user.
   Use when asked to plan, scope, or design how to implement a feature.
-tools: Read, Grep, Glob, Bash, Task
+tools: Read, Grep, Glob, Bash, Agent
 ---
 
 # Feature Planner — Orchestrator

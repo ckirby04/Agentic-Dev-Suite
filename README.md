@@ -114,11 +114,11 @@ cd /path/to/your-project
 > agents here instead of in your project. On Windows, run it from Git Bash or WSL.
 
 Then just ask, e.g. *"audit this branch"*, *"plan how to add X"*, or *"diagnose this bug"* —
-Claude routes to the matching orchestrator, which spawns its subagents via the `Task` tool.
+Claude routes to the matching orchestrator, which spawns its subagents via the `Agent` tool.
 You can also invoke an agent explicitly by name. Run `/agents` to view and manage what's
 installed.
 
-> **Note:** orchestrators need the `Task` tool in their frontmatter to delegate (already set).
+> **Note:** orchestrators need the `Agent` tool in their frontmatter to delegate (already set).
 > Subagents are intentionally given only the tools they need — the planners and auditors are
 > read-only; only the implementer set can write.
 
@@ -133,7 +133,7 @@ frontmatter to override the session default.
 ## Use as plain prompts (no Claude Code)
 
 Every orchestrator also works as a standalone prompt. Paste an orchestrator file (e.g.
-`feature-planner.md`) into any Claude chat with your input. Without the `Task` tool it runs the
+`feature-planner.md`) into any Claude chat with your input. Without the `Agent` tool it runs the
 subagents' checklists sequentially in one context window — same coverage, just not parallel.
 `branch-audit.md` is the purpose-built single-file form of the audit.
 

@@ -7,7 +7,7 @@ description: >
   typecheck, tests, coverage) — looping on failure. Surfaces deviations instead of improvising,
   stops at local commits, and hands off to the branch audit. Use when asked to implement/build
   a planned feature or fix.
-tools: Read, Grep, Glob, Bash, Edit, Write, Task
+tools: Read, Grep, Glob, Bash, Edit, Write, Agent
 ---
 
 # Feature Implementer — Orchestrator

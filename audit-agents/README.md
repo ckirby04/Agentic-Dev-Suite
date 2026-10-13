@@ -39,11 +39,11 @@ gate a merge on the verdict (and exit code).
 1. Drop these `.md` files in your project's `.claude/agents/` directory (or the user-level
    agents dir).
 2. Invoke the orchestrator: ask Claude to "audit this branch" (or call `audit-orchestrator`).
-   It dispatches the rest via the `Task` tool.
+   It dispatches the rest via the `Agent` tool.
 
 ## Using it as a plain prompt
 
-You can also paste `audit-orchestrator.md` directly. Without the `Task` tool it will run the
+You can also paste `audit-orchestrator.md` directly. Without the `Agent` tool it will run the
 five subagents' checklists sequentially itself rather than as separate agents — same coverage,
 one context window.
 
