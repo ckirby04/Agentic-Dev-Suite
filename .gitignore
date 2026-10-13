@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Claude Code local state (agents themselves are intentionally NOT ignored)
+.claude/settings.local.json
+
+# Logs / temp
+*.log
+tmp/
