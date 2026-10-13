@@ -1,8 +1,8 @@
 # Agentic Dev Suite
 
 > Composable, multi-stage agent sets for Claude Code that cover the core development loop:
-> **plan → build → audit**. Each set is an orchestrator that delegates to focused, single-
-> responsibility subagents running in their own context windows.
+> **plan → build → audit**. Each set is an orchestrator that delegates to focused,
+> single-responsibility subagents running in their own context windows.
 
 ---
 
@@ -97,9 +97,21 @@ Claude Code subagents are markdown files with YAML frontmatter, discovered from:
 Project scope wins when names collide.
 
 ```bash
-./install.sh            # project scope: ./.claude/agents + ./.claude/agent-conventions.md
-./install.sh --user     # user scope:    ~/.claude/agents + ~/.claude/agent-conventions.md
+git clone https://github.com/ckirby04/Agentic-Dev-Suite.git
+
+# Project scope: run from the root of the project you want the agents in.
+# Installs into ./.claude/agents and ./.claude/agent-conventions.md
+cd /path/to/your-project
+/path/to/Agentic-Dev-Suite/install.sh
+
+# User scope: run from anywhere.
+# Installs into ~/.claude/agents and ~/.claude/agent-conventions.md
+/path/to/Agentic-Dev-Suite/install.sh --user
 ```
+
+> **Run project-scope installs from your project root.** The script writes to `.claude/`
+> relative to the current directory, so running it from inside this repo installs the
+> agents here instead of in your project. On Windows, run it from Git Bash or WSL.
 
 Then just ask, e.g. *"audit this branch"*, *"plan how to add X"*, or *"diagnose this bug"* —
 Claude routes to the matching orchestrator, which spawns its subagents via the `Task` tool.
